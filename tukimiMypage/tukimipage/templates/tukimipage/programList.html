@@ -1,0 +1,19 @@
+{% extends './base.html'%}
+{% block content %}
+
+<div class="container">
+    <h1>成果物一覧</h1>
+    <table class='table table-striped table-hover'>
+        <tr>
+            <td>日にち</td>
+            <td>作成物</td>
+            <td>URL</td>
+        </tr>
+        <tr>
+            <td>1/25</td>
+            <td>掲示板サイト</td>
+            <td><a href='{% url "tukimipage:index" %}'>URL</a></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

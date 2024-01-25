@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>つきみ保管庫</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    <style>
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
+            <a class='navbar-brand' href='{% url "tukimipage:default" %}'>つきみ日常保管庫</a>
+
+            <a class='navbar-brand ' style="padding: left 2rem;;" href='{% url "tukimipage:default" %}'>Home</a>
+
+            <a class='navbar-brand ' style="padding: left 2rem;;" href='{% url "tukimipage:programlist" %}'>成果物一覧</a>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <nav class='navbar navbar-expand-md navbar-dark bg-secondary fixed-bottom'>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{% extends './base.html'%}
+{% block content %}
+
+<div class="container">
+    <p>{{ message }}</p>
+    <p>{{ article.content }}, {{ article.user_name }}</p>
+    <div>
+        <a href='{% url "tukimipage:index" %}' class='btn btn-outline-primary'>一覧</a>
+        <a href='{% url "tukimipage:edit" article.id %}' class='btn btn-outline-primary'>編集</a>
+        <a href='{% url "tukimipage:delete" article.id %}' class='btn btn-outline-secondary'>削除</a>
+    </div>
+</div>
+{% endblock %}
